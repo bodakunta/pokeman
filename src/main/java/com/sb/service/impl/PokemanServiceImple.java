@@ -10,11 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <p>Title: $[Name]</p>
+ * <p>Title: PokemanServiceImple</p>
  *
- * <p>Description: TODO</p>
+ * <p>Description: This calls is used for the implementation for the pokeman service</p>
  *
- * <p>Copyright: copyright (c) 2021</p>
+ * <p>Copyright: copyright (c) 2022</p>
  * <p>Company: Perosnal</p>
  *
  * @author Shankar Bodakunta
@@ -28,16 +28,16 @@ public class PokemanServiceImple implements PokemanService {
     @Override
     public List<Pokeman> getListOfPokeman() {
         List<Pokeman> pokemanList = new ArrayList<>();
-        for(int i=1;i <= 100;i++) {
-            String url = "https://pokeapi.co/api/v2/pokemon/"+i;
+        for (int i = 1; i <= 100; i++) {
+            String url = "https://pokeapi.co/api/v2/pokemon/" + i;
             pokemanList.add(restTemplate.getForObject(url, Pokeman.class));
         }
-       return pokemanList;
+        return pokemanList;
     }
 
     @Override
     public Pokeman getSelectedPokeman(int id) {
-        String url = "https://pokeapi.co/api/v2/pokemon/"+id;
+        String url = "https://pokeapi.co/api/v2/pokemon/" + id;
         return restTemplate.getForObject(url, Pokeman.class);
     }
 }

@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * <p>Title: $[Name]</p>
+ * <p>Title: PokemanController</p>
  *
- * <p>Description: TODO</p>
+ * <p>Description: Pokeman controller</p>
  *
- * <p>Copyright: copyright (c) 2021</p>
+ * <p>Copyright: copyright (c) 2022</p>
  * <p>Company: Perosnal</p>
  *
  * @author Shankar Bodakunta
  */
-
+@CrossOrigin(origins ="*")
 @RestController
 @AllArgsConstructor
 public class PokemanController {
@@ -25,13 +25,13 @@ public class PokemanController {
 
     @GetMapping
     @RequestMapping("/pokemans")
-    public List<Pokeman> getPokemans(){
-         return pokemanService.getListOfPokeman();
+    public List<Pokeman> getPokemans() {
+        return pokemanService.getListOfPokeman();
     }
 
     @GetMapping
     @RequestMapping("/pokeman/{id}")
-    public  Pokeman getSelected(@PathVariable("id") int id){
+    public Pokeman getSelected(@PathVariable("id") int id) {
         return pokemanService.getSelectedPokeman(id);
     }
 }

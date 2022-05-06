@@ -5,11 +5,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * <p>Title: $[Name]</p>
+ * <p>Title: ClientConfig</p>
  *
- * <p>Description: TODO</p>
+ * <p>Description: Client config</p>
  *
- * <p>Copyright: copyright (c) 2021</p>
+ * <p>Copyright: copyright (c) 2022</p>
  * <p>Company: Perosnal</p>
  *
  * @author Shankar Bodakunta
@@ -17,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class ClientConfig {
     @Bean
-    public RestTemplate getRestTemplate(){
+    public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
 }

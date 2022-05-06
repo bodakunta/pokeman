@@ -4,11 +4,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 /**
- * <p>Title: $[Name]</p>
+ * <p>Title: Pokeman</p>
  *
- * <p>Description: TODO</p>
+ * <p>Description: Details of the pokeman service that we required</p>
  *
- * <p>Copyright: copyright (c) 2021</p>
+ * <p>Copyright: copyright (c) 2022</p>
  * <p>Company: Perosnal</p>
  *
  * @author Shankar Bodakunta
